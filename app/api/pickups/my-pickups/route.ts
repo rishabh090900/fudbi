@@ -63,7 +63,7 @@ export async function GET(request: NextRequest) {
       })
     )
 
-    console.log('My pickups response:', posts.filter(Boolean).map(p => ({ id: p.id, pickupId: p.pickupId, status: p.status })))
+    console.log('My pickups response:', posts.filter(Boolean).map(p => ({ pickupId: p?.pickupId, pickupStatus: p?.pickupStatus })))
 
     return NextResponse.json({ posts: posts.filter(Boolean) })
   } catch (error) {
