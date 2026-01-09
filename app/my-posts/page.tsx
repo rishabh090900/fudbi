@@ -99,7 +99,7 @@ export default function MyPostsPage() {
           </div>
         ) : posts.length === 0 ? (
           <div className="card text-center py-12">
-            <p className="text-gray-600 mb-4">You haven't posted any food yet.</p>
+            <p className="text-gray-600 mb-4">You haven&apos;t posted any food yet.</p>
             <Link href="/post-food" className="btn-primary inline-block">
               Post Food Now
             </Link>
